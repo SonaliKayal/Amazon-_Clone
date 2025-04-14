@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone - Sign In</title>
+    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header (Consistent with main page) -->
+   <!-- signin.html -->
+<header class="signin-header">  <!-- Changed class -->
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/amazon-logo.png" alt="Amazon" class="logo-img">
+        </a>
+    </div>
+</header>
+
+    <!-- Sign-In Container -->
+    <main class="signin-container">
+        <div class="signin-card">
+            <h1>Sign In</h1>
+            
+            <form id="signin-form">
+                <div class="form-group">
+                    <label for="email">Email or mobile phone number</label>
+                    <input type="text" id="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                    <a href="#" class="forgot-password">Forgot your password?</a>
+                </div>
+                
+                <button type="submit" class="signin-btn">Continue</button>
+            </form>
+            
+            <div class="divider">
+                <span>New to Amazon?</span>
+            </div>
+            
+            <button class="create-account-btn">Create your Amazon account</button>
+            
+            <div class="terms-notice">
+                <small>
+                    By continuing, you agree to Amazon's <a href="#">Conditions of Use</a> 
+                    and <a href="#">Privacy Notice</a>.
+                </small>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (Consistent with main page) -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">Conditions of Use</a>
+            <a href="#">Privacy Notice</a>
+            <a href="#">Help</a>
+        </div>
+        <p>&copy; 2025 Amazon Clone</p>
+    </footer>
+
+    <script src="auth.js"></script>
+</body>
+</html>

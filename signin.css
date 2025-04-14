@@ -1,0 +1,138 @@
+/* Sign-In Page Specific Styles */
+.signin-container {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.signin-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2rem;
+    background: white;
+}
+
+.signin-card h1 {
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #a6a6a6;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.forgot-password {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: #0066c0;
+}
+
+.signin-btn {
+    width: 100%;
+    padding: 0.5rem;
+    background: #FFD814;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+}
+
+.signin-btn:hover {
+    background: #F7CA00;
+}
+
+.divider {
+    position: relative;
+    margin: 2rem 0;
+    text-align: center;
+    color: #767676;
+}
+
+.divider::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #ddd;
+    z-index: -1;
+}
+
+.divider span {
+    background: white;
+    padding: 0 1rem;
+}
+
+.create-account-btn {
+    width: 100%;
+    padding: 0.5rem;
+    background: #f0f2f2;
+    border: 1px solid #a6a6a6;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.create-account-btn:hover {
+    background: #e3e6e6;
+}
+
+.terms-notice {
+    margin-top: 1.5rem;
+    font-size: 0.75rem;
+    color: #555;
+}
+
+/* Dark Mode Support */
+body.dark-mode .signin-card {
+    background: #1f2937;
+    border-color: #37475a;
+}
+
+body.dark-mode .form-group input {
+    background: #2d3748;
+    border-color: #4a5568;
+    color: white;
+}
+
+body.dark-mode .divider span {
+    background: #1f2937;
+}
+
+/* Specific to sign-in header */
+.signin-header {
+    background: #131921;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.signin-header .logo-img {
+    height: 35px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Remove any conflicting styles */
+.signin-header.sticky {
+    position: relative !important; /* Disables sticky behavior */
+}
